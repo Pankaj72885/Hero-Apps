@@ -9,12 +9,14 @@ const Footer = () => {
   return (
     <Container className="bg-[#001931]">
       <footer className="py-8 text-white space-y-7.5">
-        <div className="flex flex-col gap-y-5 md:flex-row justify-between items-center py-2 border-b border-[#E5E7EB]/20">
+        <div className="flex flex-col gap-y-5 md:flex-row justify-between items-center md:items-start py-2 border-b border-[#E5E7EB]/20 ">
           <Link className="flex gap-x-1 items-center justify-baseline" to="/">
             <img className="size-10" src={logo} alt="Logo" />
             <p className="text-white font-bold text-base">Hero.IO</p>
           </Link>
-          <div>
+
+          <div className="space-y-2 md:space-y-4">
+            <p className="text-center text-xl font-medium">Pages</p>
             <nav className="flex flex-col gap-y-2 items-center justify-center">
               <Link className="hover:underline" to="/">
                 Home
@@ -27,6 +29,22 @@ const Footer = () => {
               </Link>
             </nav>
           </div>
+
+          <div className="space-y-2 md:space-y-4">
+            <p className="text-center text-xl font-medium">Company</p>
+            <nav className="flex flex-col gap-y-2 items-center justify-center">
+              <Link className="hover:underline" to="/">
+                About Us
+              </Link>
+              <Link className="hover:underline" to="/">
+                Our Mission
+              </Link>
+              <Link className="hover:underline" to="/">
+                Join Us
+              </Link>
+            </nav>
+          </div>
+
           <div className="space-y-2 md:space-y-4">
             <p className="text-center text-xl font-medium">Social Links</p>
             <div className="flex items-center justify-center gap-x-4 p-2">

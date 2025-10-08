@@ -1,9 +1,10 @@
+import HeaderSection from "../Components/Common/Home/HeaderSection";
 import Container from "../Components/Layout/Container";
 
 const Home = () => {
   return (
-    <Container>
-      <h1>Home</h1>
+    <Container className={`bg-[#F5F5F5]`}>
+      <HeaderSection></HeaderSection>
     </Container>
   );
 };
