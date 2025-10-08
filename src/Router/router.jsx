@@ -10,7 +10,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -19,16 +18,23 @@ const router = createBrowserRouter([
       {
         path: "/apps",
         element: <AllApps />,
+        errorElement: <ErrorPage />,
         loader: () => fetch("/apps.json"),
       },
       {
         path: "/app/:id",
         element: <AppDetails />,
+        errorElement: <ErrorPage />,
         loader: () => fetch("/apps.json"),
       },
       {
         path: "/installation",
         element: <MyInstallation />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

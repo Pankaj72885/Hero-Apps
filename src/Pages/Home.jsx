@@ -1,10 +1,10 @@
-import React from 'react';
+import Container from "../Components/Layout/Container";
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <h1>Home</h1>
-    </div>
+    </Container>
   );
 };
 

@@ -1,10 +1,10 @@
-import React from 'react';
+import Container from "../Components/Layout/Container";
 
 const AppDetails = () => {
   return (
-    <div>
+    <Container>
       <h1>AppDetails</h1>
-    </div>
+    </Container>
   );
 };
 

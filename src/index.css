@@ -1,4 +1,26 @@
+/* 
+./src/index.css
+Main CSS file for the project.
+This file is used to import TailwindCSS, DaisyUI, and custom styles.
+*/
+
+/* Import "Inter" Font from Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Import TailwindCSS */
 @import "tailwindcss";
+/* Import DaisyUI */
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark;
+  themes: light --default;
+}
+
+/* Custom TailwindCSS */
+@theme {
+  --font-inter: Inter, sans-serif;
+}
+
+@layer components {
+  .container {
+    @apply max-w-[100rem] mx-auto font-inter;
+  }
 }

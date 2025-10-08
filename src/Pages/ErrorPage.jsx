@@ -1,8 +1,10 @@
+import Container from "../Components/Layout/Container";
+
 const ErrorPage = () => {
   return (
-    <div>
+    <Container>
       <h1>ErrorPage</h1>
-    </div>
+    </Container>
   );
 };
 

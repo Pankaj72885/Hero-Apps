@@ -1,8 +1,10 @@
+import Container from "../Components/Layout/Container";
+
 const MyInstallation = () => {
   return (
-    <div>
+    <Container>
       <h1>MyInstallation</h1>
-    </div>
+    </Container>
   );
 };
 
