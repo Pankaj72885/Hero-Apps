@@ -19,8 +19,22 @@ const HeaderSection = () => {
         </p>
       </div>
       <div className="flex justify-center items-center gap-4">
-        <button className="border rounded px-6 py-3 border-[#D2D2D2] flex items-center justify-center cursor-pointer hover:bg-[#D2D2D2]/80 font-semibold text-[#001931] gap-x-2.5"> <img className="size-8" src={GooglePlay} alt="Google Play icon" /> Google Play</button>
-        <button className="border rounded px-6 py-3 border-[#D2D2D2] flex items-center justify-center cursor-pointer hover:bg-[#D2D2D2]/80 font-semibold text-[#001931] gap-x-2.5"> <img className="size-8" src={AppStore} alt="App Store Logo" /> App Store</button>
+        <a
+          href="https://play.google.com/store/apps"
+          target="_blank"
+          className="border rounded px-6 py-3 border-[#D2D2D2] flex items-center justify-center cursor-pointer hover:bg-[#D2D2D2]/80 font-semibold text-[#001931] gap-x-2.5"
+        >
+          <img className="size-8" src={GooglePlay} alt="Google Play icon" />{" "}
+          Google Play
+        </a>
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          className="border rounded px-6 py-3 border-[#D2D2D2] flex items-center justify-center cursor-pointer hover:bg-[#D2D2D2]/80 font-semibold text-[#001931] gap-x-2.5"
+        >
+          <img className="size-8" src={AppStore} alt="App Store Logo" /> App
+          Store
+        </a>
       </div>
     </div>
   );
