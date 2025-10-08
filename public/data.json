@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://unsplash.com/photos/pink-and-white-square-illustration-_tF3vug2FhQ",
+    "description": "Bring your world to life with Instagram. Create and share short videos, photos, and stories with your friends and followers.",
+    "size": 185,
+    "reviews": 138000000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 6900000 },
+      { "name": "2 star", "count": 6900000 },
+      { "name": "3 star", "count": 13800000 },
+      { "name": "4 star", "count": 27600000 },
+      { "name": "5 star", "count": 82800000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "image": "https://unsplash.com/photos/green-and-black-plastic-tool-w-qqwn5O-4I",
+    "description": "Listen to millions of songs and podcasts for free. Stream music you love and discover new tracks with personalized playlists.",
+    "size": 125,
+    "reviews": 21000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 210000 },
+      { "name": "2 star", "count": 630000 },
+      { "name": "3 star", "count": 2100000 },
+      { "name": "4 star", "count": 5250000 },
+      { "name": "5 star", "count": 12810000 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "image": "https://unsplash.com/photos/icon-4VhDqJy69vQ",
+    "description": "Simple. Reliable. Private. Message and call friends and family for free with WhatsApp, no matter where they are in the world.",
+    "size": 45,
+    "reviews": 115000000,
+    "ratingAvg": 4.1,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 8050000 },
+      { "name": "2 star", "count": 5750000 },
+      { "name": "3 star", "count": 11500000 },
+      { "name": "4 star", "count": 23000000 },
+      { "name": "5 star", "count": 66700000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Minecraft",
+    "companyName": "Mojang Studios",
+    "image": "https://unsplash.com/photos/a-giant-lego-hamburger-sitting-on-top-of-a-lush-green-field-SejIGWhmd4g",
+    "description": "Explore infinite worlds and build everything from the simplest of homes to the grandest of castles. Play in creative mode or survival.",
+    "size": 850,
+    "reviews": 8500000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 85000 },
+      { "name": "2 star", "count": 170000 },
+      { "name": "3 star", "count": 680000 },
+      { "name": "4 star", "count": 1700000 },
+      { "name": "5 star", "count": 5865000 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "image": "https://unsplash.com/photos/red-and-whites-logo-I4p0FcjDBJI",
+    "description": "Watch videos, create your own, and explore trends. Join the global community of creators and share your world with short-form videos.",
+    "size": 210,
+    "reviews": 45000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2250000 },
+      { "name": "2 star", "count": 1350000 },
+      { "name": "3 star", "count": 4500000 },
+      { "name": "4 star", "count": 9900000 },
+      { "name": "5 star", "count": 27000000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "image": "https://unsplash.com/photos/a-white-computer-mouse-qK8TuZ7T9N4",
+    "description": "Navigate your world faster and easier with Google Maps. Over 220 countries and territories mapped and hundreds of millions of businesses and places on the map.",
+    "size": 155,
+    "reviews": 12000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 480000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 6720000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "image": "https://unsplash.com/photos/red-and-black-x-sign-UVfvFrp4x4E",
+    "description": "Netflix is the leading subscription service for watching TV episodes and movies. Get the best series, movies, and more.",
+    "size": 95,
+    "reviews": 5500000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 110000 },
+      { "name": "2 star", "count": 165000 },
+      { "name": "3 star", "count": 550000 },
+      { "name": "4 star", "count": 1375000 },
+      { "name": "5 star", "count": 3300000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Slack",
+    "companyName": "Slack Technologies, Inc.",
+    "image": "https://unsplash.com/photos/a-small-white-cup-with-a-pink-and-blue-design-on-it-KtTRmZhPRjs",
+    "description": "Slack is a collaboration hub where work happens. It's a digital workspace that powers your organization and connects your software and tools.",
+    "size": 110,
+    "reviews": 890000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 26700 },
+      { "name": "2 star", "count": 44500 },
+      { "name": "3 star", "count": 133500 },
+      { "name": "4 star", "count": 222500 },
+      { "name": "5 star", "count": 462800 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Notion",
+    "companyName": "Notion Labs, Inc.",
+    "image": "https://unsplash.com/photos/text-CtHYi7qJs-8",
+    "description": "Write, plan, collaborate, and get organized. Notion is the all-in-one workspace for your notes, tasks, wikis, and databases.",
+    "size": 65,
+    "reviews": 250000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 15000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 177500 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Adobe Photoshop",
+    "companyName": "Adobe Inc.",
+    "image": "https://unsplash.com/photos/a-blue-square-button-with-the-word-ps-on-it-slQP7AL0egU",
+    "description": "Create amazing photos, graphics, composites, and art on your iPad and desktop. The power of Photoshop, now on your mobile device.",
+    "size": 550,
+    "reviews": 1800000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 36000 },
+      { "name": "2 star", "count": 54000 },
+      { "name": "3 star", "count": 144000 },
+      { "name": "4 star", "count": 360000 },
+      { "name": "5 star", "count": 1206000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Disney+",
+    "companyName": "Disney",
+    "image": "https://unsplash.com/photos/a-black-computer-mouse-G2X2hZYgryg",
+    "description": "Disney+ is the streaming home of Disney, Pixar, Marvel, Star Wars, National Geographic, and more. Stream now.",
+    "size": 80,
+    "reviews": 3200000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 160000 },
+      { "name": "2 star", "count": 128000 },
+      { "name": "3 star", "count": 320000 },
+      { "name": "4 star", "count": 768000 },
+      { "name": "5 star", "count": 1824000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Amazon Shopping",
+    "companyName": "Amazon.com, Inc.",
+    "image": "https://unsplash.com/photos/a-close-up-of-a-dice-with-an-amazon-logo-on-it-J0eqDgSQDYg",
+    "description": "Shop the Amazon app for millions of products, fast delivery, and exclusive deals. Track your orders and discover new products.",
+    "size": 140,
+    "reviews": 8900000,
+    "ratingAvg": 4.2,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 712000 },
+      { "name": "2 star", "count": 445000 },
+      { "name": "3 star", "count": 890000 },
+      { "name": "4 star", "count": 2225000 },
+      { "name": "5 star", "count": 4628000 }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Genshin Impact",
+    "companyName": "HoYoverse",
+    "image": "https://unsplash.com/photos/logo-SLpna2yVab0",
+    "description": "Step into Teyvat, a vast world teeming with life and flowing with elemental energy. Embark on a journey across a fantasy world.",
+    "size": 15000,
+    "reviews": 5400000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 108000 },
+      { "name": "2 star", "count": 162000 },
+      { "name": "3 star", "count": 540000 },
+      { "name": "4 star", "count": 1350000 },
+      { "name": "5 star", "count": 3240000 }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "MyFitnessPal",
+    "companyName": "MyFitnessPal, Inc.",
+    "image": "https://unsplash.com/photos/a-pair-of-black-weights-wDuqdlIjV-A",
+    "description": "Calorie counter, diet & exercise journal. Track your food, calories, and macros to reach your health and fitness goals.",
+    "size": 78,
+    "reviews": 1500000,
+    "ratingAvg": 4.4,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 75000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 375000 },
+      { "name": "5 star", "count": 840000 }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "1Password",
+    "companyName": "1Password",
+    "image": "https://unsplash.com/photos/a-white-and-black-object-on-a-blue-background-8At6XBgVyyY",
+    "description": "1Password remembers all your passwords for you, and keeps them safe and secure behind the one password that only you know.",
+    "size": 55,
+    "reviews": 120000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 7200 },
+      { "name": "4 star", "count": 24000 },
+      { "name": "5 star", "count": 85200 }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Strava",
+    "companyName": "Strava, Inc.",
+    "image": "https://unsplash.com/photos/a-red-heart-shaped-object-mounted-on-a-wall-JZZWwPRcR5Q",
+    "description": "Track your fitness with Strava. Record runs, rides, and other activities. Analyze your performance and join a community of athletes.",
+    "size": 42,
+    "reviews": 980000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 29400 },
+      { "name": "2 star", "count": 49000 },
+      { "name": "3 star", "count": 147000 },
+      { "name": "4 star", "count": 245000 },
+      { "name": "5 star", "count": 509600 }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Among Us",
+    "companyName": "Innersloth LLC",
+    "image": "https://unsplash.com/photos/a-cell-phone-with-hearts-and-stars-on-it-7cJvfyhn-oQ",
+    "description": "A game of teamwork and betrayal. Play with 4-15 players online as you attempt to prep your spaceship for departure, but beware of the impostor.",
+    "size": 250,
+    "reviews": 12000000,
+    "ratingAvg": 3.9,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200000 },
+      { "name": "2 star", "count": 720000 },
+      { "name": "3 star", "count": 1800000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 5280000 }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "LinkedIn",
+    "companyName": "LinkedIn Corporation",
+    "image": "https://unsplash.com/photos/blue-and-white-letter-b-9Zjd7PE_FRM",
+    "description": "Find jobs, connect with professionals, and build your career. The LinkedIn app makes it easier to discover and apply to jobs.",
+    "size": 130,
+    "reviews": 5600000,
+    "ratingAvg": 4.0,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 560000 },
+      { "name": "2 star", "count": 280000 },
+      { "name": "3 star", "count": 840000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 2520000 }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Duolingo",
+    "companyName": "Duolingo, Inc.",
+    "image": "https://unsplash.com/photos/a-green-object-with-eyes-and-a-smile-rTCDPl3C_os",
+    "description": "Learn a new language with the world’s most-downloaded education app. Duolingo is the fun, free app for learning 35+ languages quickly.",
+    "size": 35,
+    "reviews": 14000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 140000 },
+      { "name": "2 star", "count": 210000 },
+      { "name": "3 star", "count": 560000 },
+      { "name": "4 star", "count": 2800000 },
+      { "name": "5 star", "count": 10290000 }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Clash of Clans",
+    "companyName": "Supercell",
+    "image": "https://unsplash.com/photos/a-golden-copyright-symbol-on-a-green-background-vFOiFHhQNao",
+    "description": "Join millions of players worldwide as you build your village, raise a clan, and compete in epic Clan Wars against other players.",
+    "size": 320,
+    "reviews": 28000000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 560000 },
+      { "name": "2 star", "count": 840000 },
+      { "name": "3 star", "count": 1680000 },
+      { "name": "4 star", "count": 5600000 },
+      { "name": "5 star", "count": 19320000 }
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Microsoft 365 (Office)",
+    "companyName": "Microsoft Corporation",
+    "image": "https://unsplash.com/photos/icon-NBQH9hYvCwY",
+    "description": "The Office app combines Word, Excel, and PowerPoint with exclusive features to make it your go-to productivity app.",
+    "size": 180,
+    "reviews": 4200000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 168000 },
+      { "name": "2 star", "count": 210000 },
+      { "name": "3 star", "count": 630000 },
+      { "name": "4 star", "count": 1050000 },
+      { "name": "5 star", "count": 2142000 }
+    ]
+  }
+]
