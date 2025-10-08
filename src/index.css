@@ -17,10 +17,20 @@ This file is used to import TailwindCSS, DaisyUI, and custom styles.
 /* Custom TailwindCSS */
 @theme {
   --font-inter: Inter, sans-serif;
+  --color-custom-gradient: linear-gradient(125.07deg, #632ee3, #9f62f2);
 }
 
 @layer components {
   .container {
-    @apply max-w-[100rem] mx-auto font-inter;
+    @apply max-w-[100rem] mx-auto font-inter px-5 sm:px-10 lg:px-20;
+  }
+  .custom-gradient {
+    @apply bg-linear-125 from-[#632ee3] to-[#9f62f2];
+  }
+  a.active {
+    @apply underline underline-offset-4 bg-linear-125 from-[#632ee3] to-[#9f62f2] bg-clip-text text-transparent font-inter font-semibold text-base decoration-[#632ee3] decoration-2;
+  }
+  .myHover:hover {
+    @apply underline underline-offset-4 bg-linear-125 from-[#632ee3] to-[#9f62f2] bg-clip-text text-transparent font-inter font-semibold text-base decoration-[#632ee3] decoration-2 scale-105;
   }
 }
