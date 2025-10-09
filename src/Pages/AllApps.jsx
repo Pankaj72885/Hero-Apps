@@ -6,26 +6,24 @@ import mGlass from "../assets/icons/mGlass.svg";
 
 const AllApps = () => {
   const { allData, loading } = useContext(DataContext);
-  const [renderData, setRenderData] = useState([])
-  const inputRef = useRef(null)
+  const [renderData, setRenderData] = useState([]);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     setRenderData(allData);
   }, [allData]);
 
   const handleInputChange = () => {
-    const currentValue = inputRef.current.value
-    if (currentValue === ""){
-      setRenderData(allData)
-    } else{
+    const currentValue = inputRef.current.value;
+    if (currentValue === "") {
+      setRenderData(allData);
+    } else {
       const filteredData = allData.filter((data) =>
         data.title.toLowerCase().includes(currentValue.toLowerCase())
       );
       setRenderData(filteredData);
     }
-    
-  }
-
+  };
 
   if (loading) return <p>Loading Apps...</p>;
 
@@ -42,15 +40,25 @@ const AllApps = () => {
         </header>
         <section className="flex justify-between w-full items-center ">
           <p>{`(${renderData.length}) `} Apps Found</p>
-          <div className="relative">            
-          <input className="pr-4 pl-10 py-2 rounded-xl border border-[#D2D2D2]" type="text" ref={inputRef} onChange={handleInputChange} placeholder="Search Apps" />
-          <img className="absolute top-3 left-3" src={mGlass} alt="" />
+          <div className="relative">
+            <input
+              className="pr-4 pl-10 py-2 rounded-xl border border-[#D2D2D2]"
+              type="text"
+              ref={inputRef}
+              onChange={handleInputChange}
+              placeholder="Search Apps"
+            />
+            <img className="absolute top-3 left-3" src={mGlass} alt="" />
           </div>
         </section>
         <section className="grid grid-cols-4 gap-4 w-full">
-          {renderData.map((data) => (
-            <Card key={data.id} data={data}></Card>
-          ))}
+          {renderData.length > 0 ? (
+            renderData.map((data) => <Card key={data.id} data={data}></Card>)
+          ) : (
+            <p className="col-span-4 text-center text-gray-500 text-3xl font-extrabold">
+              No applications match your search.
+            </p>
+          )}
         </section>
       </div>
     </Container>

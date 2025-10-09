@@ -9,7 +9,7 @@ const Card = ({ data }) => {
     navigate(`/app/${data.id}`)
   }
   return (
-    <div onClick={goToAppDetails} className=" rounded p-4 flex flex-col justify-start items-center gap-4 bg-white">
+    <div onClick={goToAppDetails} className=" rounded p-4 flex flex-col justify-start items-center gap-4 bg-white cursor-pointer hover:scale-105 transition duration-500 ease-in-out">
       <div>
         <img
           className="h-[17.8125rem] w-auto bg-cover rounded-lg"

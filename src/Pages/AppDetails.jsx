@@ -1,9 +1,125 @@
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router";
+import {
+  Bar,
+  BarChart,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import download from "../assets/icons/download.svg";
+import star from "../assets/icons/star.svg";
+import thump from "../assets/icons/thump.svg";
 import Container from "../Components/Layout/Container";
+import DataContext from "../Context/DataContext";
+import formatNumber from "../Utils/formatNumber";
 
 const AppDetails = () => {
+  const { allData, loading } = useContext(DataContext);
+  const [appData, setAppdata] = useState(null);
+
+  const param = useParams();
+
+  useEffect(() => {
+    if (allData && allData.length > 0) {
+      const findData = allData.find((data) => data.id === Number(param.id));
+      setAppdata(findData);
+    }
+  }, [allData, param]);
+
+  console.log(appData);
+
+  if (loading) return <p>Loading Apps...</p>;
+
+  if (!appData) {
+    return <p>App Not Found.</p>;
+  }
+
   return (
-    <Container>
-      <h1>AppDetails</h1>
+    <Container className={`bg-[#F5F5F5]`}>
+      <div className="py-20">
+        <div className="flex gap-x-10 pb-7 border-b border-[#001931]/30 space-y-2">
+          <div className="size-87.5">
+            <img
+              className="object-cover h-full w-auto"
+              src={appData.image}
+              alt=""
+            />
+          </div>
+          <div className="flex-1">
+            <div className="pb-7 border-b border-[#001931]/30 space-y-2">
+              <h1 className="text-[#001931] text-3xl font-bold">
+                {appData.title}
+              </h1>
+              <p className="text-xl text-[#001931d3] font-medium">
+                Developed by <span>{appData.companyName}</span>
+              </p>
+            </div>
+            <div className="flex gap-x-6 py-7 ">
+              <div className="w-37.5 space-y-2">
+                <img className="size-10" src={download} alt="" />
+                <p className="text-[#001931]">Downloads</p>
+                <p className="text-[2.5rem] font-extrabold">
+                  {formatNumber(appData?.downloads)}
+                </p>
+              </div>
+              <div className="w-37.5 space-y-2">
+                <img className="size-10" src={star} alt="" />
+                <p className="text-[#001931]">Average Ratings</p>
+                <p className="text-[2.5rem] font-extrabold">
+                  {appData?.ratingAvg}
+                </p>
+              </div>
+              <div className="w-37.5 space-y-2">
+                <img className="size-10" src={thump} alt="" />
+                <p className="text-[#001931]">Total Reviews</p>
+                <p className="text-[2.5rem] font-extrabold">
+                  {formatNumber(appData?.reviews)}
+                </p>
+              </div>
+            </div>
+            <div>
+              <button className="px-5 py-3.5 bg-[#00d390] rounded text-white text-xl font-semibold cursor-pointer">
+                Install Now {`(${appData.size} MB)`}
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="py-10">
+          <p className="text-2xl font-semibold">Ratings</p>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={appData.ratings} layout="vertical">
+              {/* 2. Define the axes but hide them */}
+              <XAxis type="number" hide={false} />
+              <YAxis
+                dataKey="name"
+                type="category"
+                hide={false}
+                reversed={true}
+              />
+
+              <Tooltip
+                cursor={{ fill: "#777" }}
+                contentStyle={{ backgroundColor: "#555", border: "none" }}
+              />
+
+              {/* 3. Define the bars */}
+              <Bar
+                dataKey="count"
+                fill="#FFA500" // An orange color
+                barSize={30} // You can adjust the thickness of the bars
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="space-y-2">
+          <h1 className="text-2xl font-semibold text-[#001931]">Description</h1>
+          <p className="text-xl font-normal  text-[#627382]">
+            {appData.description}
+          </p>
+        </div>
+      </div>
     </Container>
   );
 };
