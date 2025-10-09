@@ -1,10 +1,15 @@
+import { useNavigate } from "react-router";
 import formatNumber from "../../Utils/formatNumber";
 import download from "../../assets/icons/download.svg";
 import rating from "../../assets/icons/star.svg";
 
 const Card = ({ data }) => {
+  const navigate = useNavigate()
+  const goToAppDetails = () => {
+    navigate(`/app/${data.id}`)
+  }
   return (
-    <div className=" rounded p-4 flex flex-col justify-start items-center gap-4 bg-white">
+    <div onClick={goToAppDetails} className=" rounded p-4 flex flex-col justify-start items-center gap-4 bg-white">
       <div>
         <img
           className="h-[17.8125rem] w-auto bg-cover rounded-lg"

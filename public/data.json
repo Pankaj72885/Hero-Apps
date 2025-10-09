@@ -358,23 +358,5 @@
       { "name": "4 star", "count": 5600000 },
       { "name": "5 star", "count": 19320000 }
     ]
-  },
-  {
-    "id": 21,
-    "title": "Microsoft 365 (Office)",
-    "companyName": "Microsoft Corporation",
-    "image": "https://unsplash.com/photos/icon-NBQH9hYvCwY",
-    "description": "The Office app combines Word, Excel, and PowerPoint with exclusive features to make it your go-to productivity app.",
-    "size": 180,
-    "reviews": 4200000,
-    "ratingAvg": 4.3,
-    "downloads": 1000000000,
-    "ratings": [
-      { "name": "1 star", "count": 168000 },
-      { "name": "2 star", "count": 210000 },
-      { "name": "3 star", "count": 630000 },
-      { "name": "4 star", "count": 1050000 },
-      { "name": "5 star", "count": 2142000 }
-    ]
   }
 ]
