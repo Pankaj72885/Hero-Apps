@@ -1,5 +1,5 @@
-import Facts from "../Components/Common/Home/Facts";
-import HeaderSection from "../Components/Common/Home/HeaderSection";
+import StatesSection from "../Components/Common/Home/StatesSection";
+import Banner from "../Components/Common/Home/Banner";
 import Container from "../Components/Layout/Container";
 import HeroBanner from "../assets/hero.png";
 
@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <>
       <Container className={`bg-[#F5F5F5]`}>
-        <HeaderSection></HeaderSection>
+        <Banner></Banner>
         <img className="mx-auto" src={HeroBanner} alt="Hero Image" />
       </Container>
       <Container className={`custom-gradient`}>
-        <Facts></Facts>
+        <StatesSection></StatesSection>
       </Container>
     </>
   );

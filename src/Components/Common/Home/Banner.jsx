@@ -1,7 +1,7 @@
 import AppStore from "../../../assets/icons/AppStore.svg"
 import GooglePlay from "../../../assets/icons/GooglePlay.svg";
 
-const HeaderSection = () => {
+const Banner = () => {
   return (
     <div className="pt-20 pb-10 space-y-10">
       <div className="space-y-4">
@@ -40,4 +40,4 @@ const HeaderSection = () => {
   );
 };
 
-export default HeaderSection;
+export default Banner;
