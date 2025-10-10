@@ -14,10 +14,16 @@ import thump from "../assets/icons/thump.svg";
 import Container from "../Components/Layout/Container";
 import DataContext from "../Context/DataContext";
 import formatNumber from "../Utils/formatNumber";
+import { matchingData, setLocalData } from "../Utils/localData";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const { allData, loading } = useContext(DataContext);
   const [appData, setAppdata] = useState(null);
+  const [appInstalled, setAppInstalled] = useState(false);
+
+  
+  
 
   const param = useParams();
 
@@ -28,7 +34,22 @@ const AppDetails = () => {
     }
   }, [allData, param]);
 
-  console.log(appData);
+  useEffect(() => {
+    if (appData) {
+      setAppInstalled(matchingData(appData));
+    }
+  }, [appData]);
+
+  const handleClick = () => {
+    if (appInstalled) {
+      toast.warn(`${appData.title} is already installed.`);
+    } else {
+      setLocalData(appData);
+      toast.success(`${appData.title} has been Installed Successful`);
+      setAppInstalled(true); 
+    }
+    
+  };
 
   if (loading) return <p>Loading Apps...</p>;
 
@@ -80,8 +101,16 @@ const AppDetails = () => {
               </div>
             </div>
             <div>
-              <button className="px-5 py-3.5 bg-[#00d390] rounded text-white text-xl font-semibold cursor-pointer">
-                Install Now {`(${appData.size} MB)`}
+              <button
+                onClick={handleClick}
+                className={`px-5 py-3.5 rounded text-white text-xl font-semibold cursor-pointer ${
+                  appInstalled ? "bg-gray-500" : "bg-[#00d390]"
+                }`}
+                disabled={appInstalled}
+              >
+                {appInstalled
+                  ? "Installed"
+                  : `Install Now (${appData.size} MB)`}
               </button>
             </div>
           </div>
@@ -105,11 +134,7 @@ const AppDetails = () => {
               />
 
               {/* 3. Define the bars */}
-              <Bar
-                dataKey="count"
-                fill="#FFA500" // An orange color
-                barSize={30} // You can adjust the thickness of the bars
-              />
+              <Bar dataKey="count" fill="#FFA500" barSize={30} />
             </BarChart>
           </ResponsiveContainer>
         </div>
