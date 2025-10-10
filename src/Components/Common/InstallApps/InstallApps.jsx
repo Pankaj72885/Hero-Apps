@@ -10,8 +10,8 @@ const InstallApps = ({ apps, setInstallApp }) => {
     setInstallApp(getLocalData());
   };
   return (
-    <div className=" rounded p-4 flex justify-between items-center w-full gap-4 bg-white ">
-      <div className="size-20 flex justify-center items-center">
+    <div className=" rounded p-4 flex flex-col md:flex-row justify-between items-center w-full gap-4 bg-white ">
+      <div className="size-full md:size-20 flex justify-center items-center">
         <img
           className="bg-cover rounded-lg w-auto h-full"
           src={apps.image}
@@ -20,9 +20,11 @@ const InstallApps = ({ apps, setInstallApp }) => {
       </div>
       <div className="flex-1">
         <div>
-          <h2 className="text-xl font-medium text-[#001931]">{apps.title}</h2>
+          <h2 className="px-2.5 text-2xl md:text-xl font-medium text-center md:text-start text-[#001931]">
+            {apps.title}
+          </h2>
         </div>
-        <div className="flex items-center w-full ]">
+        <div className="flex w-full">
           <div className="flex justify-center items-center rounded gap-2 px-2.5 py-1.5">
             <img className="size-4" src={download} alt="" />
             <p className="text-[#00d390]">{formatNumber(apps.downloads)}</p>
@@ -36,10 +38,10 @@ const InstallApps = ({ apps, setInstallApp }) => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="w-full md:w-fit">
         <button
           onClick={handleClick}
-          className="px-4 py-3 rounded-xl bg-[#00D390] text-white font-semibold cursor-pointer"
+          className="px-4 py-3 rounded-xl bg-[#00D390] text-white font-semibold cursor-pointer w-full"
         >
           Uninstall
         </button>

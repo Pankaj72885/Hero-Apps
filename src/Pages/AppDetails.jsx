@@ -13,11 +13,11 @@ import download from "../assets/icons/download.svg";
 import star from "../assets/icons/star.svg";
 import thump from "../assets/icons/thump.svg";
 import AppNotFound from "../Components/Common/AppNotFound";
+import Loading from "../Components/Common/Loading";
 import Container from "../Components/Layout/Container";
 import DataContext from "../Context/DataContext";
 import formatNumber from "../Utils/formatNumber";
 import { matchingData, setLocalData } from "../Utils/localData";
-import Loading from "../Components/Common/Loading";
 
 const AppDetails = () => {
   const { allData, loading } = useContext(DataContext);
@@ -63,16 +63,16 @@ const AppDetails = () => {
   return (
     <Container className={`bg-[#F5F5F5]`}>
       <div className="py-20">
-        <div className="flex gap-x-10 pb-7 border-b border-[#001931]/30 space-y-2">
-          <div className="size-87.5">
+        <div className="flex flex-col lg:flex-row items-center gap-x-10 pb-7 border-b border-[#001931]/30 space-y-2">
+          <div className="md:size-87.5 size-70">
             <img
               className="object-cover h-full w-auto"
               src={appData.image}
               alt=""
             />
           </div>
-          <div className="flex-1">
-            <div className="pb-7 border-b border-[#001931]/30 space-y-2">
+          <div className="flex-1 flex flex-col items-center lg:items-start ">
+            <div className="pb-7 border-b border-[#001931]/30 space-y-2 md:w-full flex flex-col items-center lg:items-start">
               <h1 className="text-[#001931] text-3xl font-bold">
                 {appData.title}
               </h1>
@@ -80,22 +80,22 @@ const AppDetails = () => {
                 Developed by <span>{appData.companyName}</span>
               </p>
             </div>
-            <div className="flex gap-x-6 py-7 ">
-              <div className="w-37.5 space-y-2">
+            <div className="flex flex-col md:flex-row justify-center gap-6 py-7 ">
+              <div className="w-37.5 space-y-2 flex flex-col items-center md:items-start ">
                 <img className="size-10" src={download} alt="" />
                 <p className="text-[#001931]">Downloads</p>
                 <p className="text-[2.5rem] font-extrabold">
                   {formatNumber(appData?.downloads)}
                 </p>
               </div>
-              <div className="w-37.5 space-y-2">
+              <div className="w-37.5 space-y-2 flex flex-col items-center md:items-start">
                 <img className="size-10" src={star} alt="" />
                 <p className="text-[#001931]">Average Ratings</p>
                 <p className="text-[2.5rem] font-extrabold">
                   {appData?.ratingAvg}
                 </p>
               </div>
-              <div className="w-37.5 space-y-2">
+              <div className="w-37.5 space-y-2 flex flex-col items-center md:items-start">
                 <img className="size-10" src={thump} alt="" />
                 <p className="text-[#001931]">Total Reviews</p>
                 <p className="text-[2.5rem] font-extrabold">
@@ -118,11 +118,10 @@ const AppDetails = () => {
             </div>
           </div>
         </div>
-        <div className="py-10">
+        <div className="py-10 border-b border-[#001931]/30">
           <p className="text-2xl font-semibold">Ratings</p>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={appData.ratings} layout="vertical">
-              {/* 2. Define the axes but hide them */}
               <XAxis type="number" hide={false} />
               <YAxis
                 dataKey="name"
@@ -141,7 +140,7 @@ const AppDetails = () => {
             </BarChart>
           </ResponsiveContainer>
         </div>
-        <div className="space-y-2">
+        <div className="space-y-2 pt-10">
           <h1 className="text-2xl font-semibold text-[#001931]">Description</h1>
           <p className="text-xl font-normal  text-[#627382]">
             {appData.description}

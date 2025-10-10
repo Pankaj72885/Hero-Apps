@@ -14,10 +14,10 @@ const AppNotFound = () => {
           <img className="size-auto" src={appError} alt="" />
         </div>
         <div className="flex flex-col items-center gap-2">
-          <h1 className="font-semibold text-5xl text-[#001931]">
+          <h1 className="font-semibold text-5xl text-[#001931] text-center">
             OPPS!! APP NOT FOUND
           </h1>
-          <p className="">
+          <p className="text-center">
             The App you are requesting is not found on our system. please try
             another apps
           </p>

@@ -43,11 +43,11 @@ const AllApps = () => {
             Explore All Apps on the Market developed by us. We code for Millions
           </p>
         </header>
-        <section className="flex justify-between w-full items-center ">
+        <section className="flex flex-col md:flex-row gap-5 justify-between w-full items-center ">
           <p>{`(${renderData.length}) `} Apps Found</p>
           <div className="relative">
             <input
-              className="pr-4 pl-10 py-2 rounded-xl border border-[#D2D2D2]"
+              className="pr-4 pl-10 py-2 w-[10rem] md:w-[20rem] rounded-xl border border-[#D2D2D2]"
               type="text"
               ref={inputRef}
               onChange={handleInputChange}
@@ -56,7 +56,7 @@ const AllApps = () => {
             <img className="absolute top-3 left-3" src={mGlass} alt="" />
           </div>
         </section>
-        <section className="grid grid-cols-4 gap-4 w-full">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
           {renderData.length > 0 ? (
             renderData.map((data) => <Card key={data.id} data={data}></Card>)
           ) : (

@@ -45,11 +45,11 @@ const MyInstallation = () => {
 
   return (
     <Container className={`bg-[#F5F5F5] h-full`}>
-      <div className="py-20 flex flex-col gap-y-10 justify-start items-center">
+      <div className="py-20 flex flex-col gap-y-10 justify-start items-center min-h-full">
         <header
           className={`${
-            renderApps.length ? "visible" : "invisible"
-          } flex flex-col justify-between w-full items-center mx-auto space-y-4`}
+            renderApps.length ? "flex" : "hidden"
+          } flex-col justify-between w-full items-center mx-auto space-y-4`}
         >
           <h1 className="text-center text-5xl font-bold text-[#001931]">
             Your Installed Apps
@@ -60,8 +60,8 @@ const MyInstallation = () => {
         </header>
         <section
           className={`${
-            renderApps.length ? "visible" : "invisible"
-          } flex justify-between w-full items-center`}
+            renderApps.length ? "flex" : "hidden"
+          } justify-between w-full items-center`}
         >
           <p>{`(${installApps.length}) `} Apps Found</p>
           <div>
@@ -87,7 +87,7 @@ const MyInstallation = () => {
               ></InstallApps>
             ))
           ) : (
-            <p className=" col-span-4 text-center text-gray-500 text-5xl font-extrabold">
+            <p className="min-h-full flex justify-center items-center col-span-4 text-center text-gray-500 text-5xl font-extrabold">
               No applications are Installed.
             </p>
           )}
