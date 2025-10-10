@@ -63,7 +63,7 @@ const Header = () => {
           <Link className="flex gap-x-1 items-center justify-baseline" to="/">
             <img className="size-10" src={logo} alt="Logo" />
             <p className="custom-gradient bg-clip-text text-transparent font-bold text-base capitalize">
-              Hero Apps
+              Hero.IO
             </p>
           </Link>
         </div>

@@ -26,7 +26,7 @@ const TrendingApps = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
       </header>
-      <section className="grid grid-cols-4 gap-4 w-full">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
         {trendingData.map((data) => (
           <Card key={data.id} data={data}></Card>
         ))}
