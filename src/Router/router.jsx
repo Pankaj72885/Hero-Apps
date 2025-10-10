@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import AllApps from "../Pages/AllApps";
 import AppDetails from "../Pages/AppDetails";
-import ErrorPage from "../Pages/ErrorPage";
+import ErrorPage from "../Components/Common/ErrorPage";
 import Home from "../Pages/Home";
 import MyInstallation from "../Pages/MyInstallation";
 import Root from "./Root";
