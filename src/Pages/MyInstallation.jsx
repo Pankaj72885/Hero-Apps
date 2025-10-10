@@ -66,6 +66,7 @@ const MyInstallation = () => {
           <p>{`(${installApps.length}) `} Apps Found</p>
           <div>
             <select
+              className="border border-gray-300 rounded px-3 py-1"
               onChange={handleChange}
               ref={selectRef}
               defaultValue="default"

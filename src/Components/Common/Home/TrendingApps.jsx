@@ -2,13 +2,19 @@ import { useContext } from "react";
 import { Link } from "react-router";
 import DataContext from "../../../Context/DataContext";
 import Card from "../Card";
+import Loading from "../Loading";
 
 const TrendingApps = () => {
-  const {allData, loading} = useContext(DataContext)
-  
-  const trendingData = allData.slice(0,8)
+  const { allData, loading } = useContext(DataContext);
 
-  if (loading) return <p>Loading Apps...</p>;
+  const trendingData = allData.slice(0, 8);
+
+  if (loading)
+    return (
+      <div className="h-full flex items-center justify-center">
+        <Loading />
+      </div>
+    );
 
   return (
     <div className="py-20 flex flex-col gap-y-10 justify-start items-center">

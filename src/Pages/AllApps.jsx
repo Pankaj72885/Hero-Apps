@@ -1,8 +1,9 @@
 import { useContext, useEffect, useRef, useState } from "react";
+import mGlass from "../assets/icons/mGlass.svg";
 import Card from "../Components/Common/Card";
+import Loading from "../Components/Common/Loading";
 import Container from "../Components/Layout/Container";
 import DataContext from "../Context/DataContext";
-import mGlass from "../assets/icons/mGlass.svg";
 
 const AllApps = () => {
   const { allData, loading } = useContext(DataContext);
@@ -25,7 +26,11 @@ const AllApps = () => {
     }
   };
 
-  if (loading) return <p>Loading Apps...</p>;
+  if (loading) return (
+    <div className="h-full flex items-center justify-center">
+      <Loading />
+    </div>
+  );
 
   return (
     <Container className={`bg-[#F5F5F5]`}>

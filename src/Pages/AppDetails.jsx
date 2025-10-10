@@ -17,6 +17,7 @@ import Container from "../Components/Layout/Container";
 import DataContext from "../Context/DataContext";
 import formatNumber from "../Utils/formatNumber";
 import { matchingData, setLocalData } from "../Utils/localData";
+import Loading from "../Components/Common/Loading";
 
 const AppDetails = () => {
   const { allData, loading } = useContext(DataContext);
@@ -48,7 +49,12 @@ const AppDetails = () => {
     }
   };
 
-  if (loading) return <p>Loading Apps...</p>;
+  if (loading)
+    return (
+      <div className="h-full flex items-center justify-center">
+        <Loading />
+      </div>
+    );
 
   if (!appData) {
     return <AppNotFound />;
