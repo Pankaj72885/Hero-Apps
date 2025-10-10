@@ -3,11 +3,13 @@ import { removeData } from "../../../Utils/localData";
 import download from "../../../assets/icons/download.svg";
 import rating from "../../../assets/icons/star.svg";
 import { getLocalData } from "../../../Utils/localData";
+import { toast } from "react-toastify";
 
 const InstallApps = ({ apps, setInstallApp }) => {
   const handleClick = () => {
     removeData(apps);
     setInstallApp(getLocalData());
+    toast.success(`${apps.title} has been Uninstalled Successful`);
   };
   return (
     <div className=" rounded p-4 flex flex-col md:flex-row justify-between items-center w-full gap-4 bg-white ">

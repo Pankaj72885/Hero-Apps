@@ -37,7 +37,7 @@ const Header = () => {
         Apps
       </NavLink>
       <NavLink className="myHover" to="/installation">
-        My Installation
+        Installation
       </NavLink>
     </>
   );
@@ -55,7 +55,7 @@ const Header = () => {
             <nav
               className={`${
                 toggle ? "opacity-100" : "opacity-0 pointer-events-none"
-              } absolute flex flex-col gap-y-1 bg-gray-200 px-3 py-1 rounded-sm items-start justify-baseline top-10 transition-all duration-500 ease-in-out w-35`}
+              } absolute flex flex-col gap-y-1 bg-gray-200 px-3 py-1 rounded-sm items-start justify-baseline top-10 transition-all duration-500 ease-in-out`}
             >
               {navLinks}
             </nav>

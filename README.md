@@ -1,6 +1,6 @@
 # Hero Apps
 
-![Hero Apps Logo](./src/assets/logo.png)
+![Hero Apps Logo](./src/assets/logo_small.png)
 
 A modern and responsive web application that showcases a curated collection of popular mobile apps, providing detailed information and statistics. This project is designed to demonstrate proficiency in front-end development, creating a visually appealing and user-friendly experience.
 
